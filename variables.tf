@@ -19,5 +19,5 @@ variable "public_vlan_id" {
 }
 
 variable "cluster_name" {
-  default = "cluster"
+  default = "clustermytest"
 }
