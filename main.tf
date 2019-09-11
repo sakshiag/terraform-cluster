@@ -4,6 +4,7 @@ resource "ibm_container_cluster" "cluster" {
   datacenter        = "${var.datacenter}"
   no_subnet         = true
   default_pool_size = 2
+  hardware          = "${var.isolation}"
   machine_type      = "${var.machine_type}"
   public_vlan_id    = "${var.public_vlan_id}"
   private_vlan_id   = "${var.private_vlan_id}"
